@@ -392,11 +392,12 @@ public static class EnemyAISetup
         GetOrAdd<PlayerNoise>(player).enemyLayer = 1 << enemyLayer;
         GetOrAdd<PlayerHealth>(player);
 
-        // Câmera segue o jogador de cima (o root do Player não gira, só o modelo).
+        // Câmera segue o jogador de cima, inclinada (o root do Player não gira, só o modelo).
+        // Fica logo acima das paredes (6,6 m), a ~7 m do jogador.
         var camera = GameObject.Find("Main Camera");
         camera.transform.SetParent(player.transform, false);
-        camera.transform.localPosition = new Vector3(0f, 16f, -9f);
-        camera.transform.localRotation = Quaternion.Euler(60f, 0f, 0f);
+        camera.transform.localPosition = new Vector3(0f, 7.5f, -3f);
+        camera.transform.localRotation = Quaternion.Euler(65f, 0f, 0f);
 
         return player;
     }

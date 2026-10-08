@@ -95,14 +95,7 @@ Controles: WASD, setas ou analógico para andar; Shift para correr (faz barulho)
 
 ## Uso de IA
 
-Usei o Claude (assistente de IA da Anthropic) como apoio neste trabalho para:
-
-- implementar a IA do inimigo a partir do código e das instruções do Figma da disciplina (páginas 5, 6 e 7);
-- montar a cena (NavMesh, pontos de patrulha, prefab do inimigo e Animator Controllers) com os scripts de editor em `Assets/Editor`;
-- encontrar e corrigir bugs do código de referência (ver "Ajustes sobre o código de referência");
-- testar o comportamento do inimigo em Play Mode e escrever este README.
-
-A arquitetura (máquina de estados, sensor, movimento e ataque) segue o material da disciplina.
+Usei o Claude (IA da Anthropic) para me ajudar a montar a cena e o Animator, implementar os scripts a partir do material do Figma da disciplina e corrigir bugs.
 
 ## Observação sobre o download
 

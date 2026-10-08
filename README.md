@@ -93,6 +93,17 @@ Controles: WASD, setas ou analógico para andar; Shift para correr (faz barulho)
 - **Tools > IA > Configurar cena** (`Assets/Editor/EnemyAISetup.cs`): recria os Animator Controllers, o prefab `Assets/Prefabs/Enemy.prefab`, o NavMesh, os pontos de patrulha, o inimigo e o jogador na cena. Pode ser executado de novo.
 - **Tools > IA > Testar IA (Play Mode)** (`Assets/Editor/AIVerify.cs`): abre a cena, entra em Play e roda um autoteste que confere Patrol → Chase → Attack → Search → Patrol. O resultado sai no Console, nas linhas `[Verify]`.
 
+## Uso de IA
+
+Usei o Claude (assistente de IA da Anthropic) como apoio neste trabalho para:
+
+- implementar a IA do inimigo a partir do código e das instruções do Figma da disciplina (páginas 5, 6 e 7);
+- montar a cena (NavMesh, pontos de patrulha, prefab do inimigo e Animator Controllers) com os scripts de editor em `Assets/Editor`;
+- encontrar e corrigir bugs do código de referência (ver "Ajustes sobre o código de referência");
+- testar o comportamento do inimigo em Play Mode e escrever este README.
+
+A arquitetura (máquina de estados, sensor, movimento e ataque) segue o material da disciplina.
+
 ## Observação sobre o download
 
 Os modelos `.fbx` estão no Git LFS. Para baixar o projeto, use `git clone` com o Git LFS instalado. O "Download ZIP" do GitHub só inclui esses arquivos se a opção **Include Git LFS objects in archives** estiver ativada nas configurações do repositório.

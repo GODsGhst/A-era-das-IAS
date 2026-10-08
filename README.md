@@ -95,7 +95,7 @@ Controles: WASD, setas ou analógico para andar; Shift para correr (faz barulho)
 
 ## Uso de IA
 
-Usei o Claude (IA da Anthropic) para me ajudar a montar a cena e o Animator, implementar os scripts a partir do material do Figma da disciplina e corrigir bugs.
+Eu criei o labirinto (chão e paredes), importei os personagens e as animações do Mixamo (Idle, walk e attack) e fiz o script base de movimento do jogador (`Andar.cs`). Usei o Claude (IA da Anthropic) para me ajudar a montar o inimigo, o NavMesh e o Animator, implementar os scripts da IA a partir do material do Figma da disciplina e corrigir bugs.
 
 ## Observação sobre o download
 
